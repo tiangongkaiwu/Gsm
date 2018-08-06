@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/fly1"
+        android:duration="800"/>
+    <item
+        android:drawable="@drawable/fly2"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/fly3"
+        android:duration="600"/>
+    <item
+        android:drawable="@drawable/fly4"
+        android:duration="800"/>
+    <item
+        android:drawable="@drawable/fly5"
+        android:duration="300"/>
+    <item
+        android:drawable="@drawable/fly6"
+        android:duration="600"/>
+    <item
+        android:drawable="@drawable/fly7"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/fly8"
+        android:duration="600"/>
+    <item
+        android:drawable="@drawable/fly9"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/fly10"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/fly11"   
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/fly12"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/fly13"
+        android:duration="600"/>
+    <item
+        android:drawable="@drawable/fly14"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/fly15"
+        android:duration="800"/>
+    <item
+        android:drawable="@drawable/fly16"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/fly17"
+        android:duration="200"/>
+
+</animation-list>

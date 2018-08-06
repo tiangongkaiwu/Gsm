@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+body { font-family: "微软雅黑"; font-size: 12px; color: #000000; word-wrap: break-word; behavior: url("csshover.htc");  }
+button, input, select, textarea { font: 12px/1.5 Arial, "微软雅黑", Helvetica, Verdana, sans-serif; word-wrap: break-word; color: #565756; }
+ul, li { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+img { border: none; border: 0; vertical-align: middle; }
+a { text-decoration: none; outline: none; }
+p { margin: 0; padding: 0; }
+input, select, textarea { vertical-align: middle; *font-size:100%;
+}
+.clear{ clear:both;}
+
+.jiashu{ text-align:center; width:100%; height:auto;}
+.jiashu  input{ width:27%; min-width:200px; height:52px; font-size:1.5em; border:1px solid #fda527; border-radius:5px; color:#fda527; background:url(../images/hj.png) no-repeat;  z-index:100; margin-left:auto; margin-right:auto; margin-top:-70px; margin-bottom:20px; padding-left:52px; padding-right:52px; }
+.jp_p{ margin-top:8px; margin-bottom:8px; width:100%; text-align:center; font-size:1.5em; }
+.tuijian{ width:100%; height:auto; }
+.tuijian div{ float:left; width:24.7%; height:auto; min-height:160px; border-right:0.1em solid #e5e2e2; border-top:1px solid #e5e2e2; text-align:center; padding-top:10px; }
+.tuijian div img{ width:65%;}
+.tj_fp{ font-size:1.3em; margin-top:5px; margin-bottom:5px;}
+.tj_lp{font-size:1.1em; margin-top:5px; margin-bottom:5px; color:#999;}
+.tuijian div a{ width:75%; height:30px; display:inline-block; border:1px solid #ccc; border-radius:15px; margin-top:10px; margin-bottom:10px; text-align:center; color:#666; line-height:30px; font-size:1.3em;}
+.ggao{ position:fixed; bottom:0px; width:100%; height:70px;}
+.guanggao{ width:100%; height:70px;}
+.close{ position:absolute; z-index:100; right:0; margin-top:-60px; margin-right:10px; width:20px; height:20px;}

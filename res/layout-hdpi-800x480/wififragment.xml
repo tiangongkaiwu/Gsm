@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_hard_middle"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#50b5f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wifi_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_wifi_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wifi_point_n" />
+
+                <TextView
+                    android:id="@+id/tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_total"
+                    android:layout_below="@+id/tv_total"
+                    android:paddingTop="15dp"
+                    android:text="普通强度60%"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_normal"
+                    android:layout_below="@+id/tv_normal"
+                    android:paddingTop="5dp"
+                    android:text="额外增强20%"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_wifi_point"
+                    android:layout_marginLeft="58dp"
+                    android:layout_toRightOf="@+id/iv_wifi_point"
+                    android:text="80"
+                    android:textColor="@android:color/white"
+                    android:textSize="65sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_wifi_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_wifi_disable" />
+
+        <TextView
+            android:id="@+id/tv_wifi_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="WIFI信号增强未启动"
+            android:textColor="#F15B58"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_hard_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_wifi_disable" />
+
+        <TextView
+            android:id="@+id/tv_hard_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_hard_speed"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_hard_speed"
+            android:text="硬件加速未启动"
+            android:textColor="#F15B58"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_hard_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/iv_hard_selector"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:text="立即加速	"
+            android:textColor="#50b5f7"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_wifi_signal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iv_signal_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_wifi_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/wifi_single" />
+
+            <TextView
+                android:id="@+id/tv_signal_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="增强信号"
+                android:textColor="#50b5f7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_signal_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="增强使用时间99小时30分"
+            android:textColor="#50b5f7"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

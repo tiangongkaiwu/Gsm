@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<title>游戏加速</title>
+</head>
+
+<body>
+<!--开始加速区
+<div class="jiashu">
+<img src="images/wer_02.png" width="100%" height="100" />
+<input  type="button" value="开始加速" />
+</div> 
+-->
+<!--精品推荐区-->
+<p class="jp_p">精品推荐</p>
+<div class="tuijian">
+
+<div style="margin-left:0.1em;"><img src="images/wer_05.png" onClick="add('http://gdown.baidu.com/data/wisegame/dfa31e6733641106/baidushoujiweishi_2238.apk' , 'baiduweisi.apk' , '百度卫士' )" /><p class="tj_fp">百度卫士</p><p class="tj_lp">20万+下载</p><a onClick="add('http://gdown.baidu.com/data/wisegame/dfa31e6733641106/baidushoujiweishi_2238.apk' , 'baiduweisi.apk' , '百度卫士' )">下载</a></div>
+
+<div><img src="images/wer_07.png" onClick="add('http://shouji.360tpcdn.com/150713/26a768b5a06f51167109f5eb73e2f933/com.tencent.mtt_601560.apk' , 'QQliulanqi.apk' , 'QQ浏览器' )" /><p class="tj_fp">QQ浏览器</p><p class="tj_lp">30万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150713/26a768b5a06f51167109f5eb73e2f933/com.tencent.mtt_601560.apk' , 'QQliulanqi.apk' , 'QQ浏览器' )">下载</a></div>
+
+<div><img src="images/wer_09.png" onClick="add('http://shouji.360tpcdn.com/150624/e4eaa1a25098f10c51de3c72e2550b49/com.qihoo.appstore_300030234.apk' , '360zhushou.apk' , '360助手' )" /><p class="tj_fp">360助手</p><p class="tj_lp">15万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150624/e4eaa1a25098f10c51de3c72e2550b49/com.qihoo.appstore_300030234.apk' , '360zhushou.apk' , '360助手' )">下载</a></div>
+
+<div style="border-right:0px;"><img src="images/wer_11.png" onClick="add('http://shouji.360tpcdn.com/150714/3a201a4b8b4df2a10ed8514b865996f6/com.qihoo360.mobilesafe_237.apk' , '360weishi.apk' , '360卫士' )" /><p class="tj_fp">360卫士</p><p class="tj_lp">20万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150714/3a201a4b8b4df2a10ed8514b865996f6/com.qihoo360.mobilesafe_237.apk' , '360weishi.apk' , '360卫士' )">下载</a></div>
+
+<div style="margin-left:0.1em;"><img src="images/wer_17.png" onClick="add('http://shouji.360tpcdn.com/150812/6fae162aa733194572ba70092cbed090/com.tencent.android.qqdownloader_5501129.apk' , 'yingyongbao.apk' , '应用宝' )" /><p class="tj_fp">应用宝</p><p class="tj_lp">20万+下载</p><a  onClick="add('http://shouji.360tpcdn.com/150812/6fae162aa733194572ba70092cbed090/com.tencent.android.qqdownloader_5501129.apk' , 'yingyongbao.apk' , '应用宝' )">下载</a></div>
+
+<div><img src="images/wer_18.png"  onClick="add('http://bs.baidu.com/baidu-suite-app-21/1006186j/2e6045abae0304cf03bfbc74d3cdbed9/%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6-%E7%99%BE%E5%BA%A6%E6%89%8B%E6%9C%BA%E5%8A%A9%E6%89%8B%E6%9E%81%E9%809F%E5%AE%89%E8%A3%85%E5%99%A8.exe' , 'tenxunguanjia.apk' , '腾讯管家' )" /><p class="tj_fp">腾讯管家</p><p class="tj_lp">30万+下载</p><a onClick="add('http://bs.baidu.com/baidu-suite-app-21/1006186j/2e6045abae0304cf03bfbc74d3cdbed9/%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6-%E7%99%BE%E5%BA%A6%E6%89%8B%E6%9C%BA%E5%8A%A9%E6%89%8B%E6%9E%81%E9%809F%E5%AE%89%E8%A3%85%E5%99%A8.exe' , 'tenxunguanjia.apk' , '腾讯管家' )">下载</a></div>
+
+<div><img src="images/wer_19.png" onClick="add('http://down.360safe.com/kandian/kandian_xxhh_51.apk' , '360kandian.apk' , '360看点' )" /><p class="tj_fp">360看点</p><p class="tj_lp">15万+下载</p><a onClick="add('http://down.360safe.com/kandian/kandian_xxhh_51.apk' , '360kandian.apk' , '360看点' )" >下载</a></div>
+
+<div style="border-right:0px;"><img src="images/wer_20.png" onClick="add('http://d.sopopo.com:8001/rj/141010/360%E6%AF%8F%E6%97%A5%E7%9C%8B%E7%82%B9.apk' , 'zhijianxiaoshuo.apk' , '指尖小说' )"  /><p class="tj_fp">指尖小说</p><p class="tj_lp">20万+下载</p><a onClick="add('http://d.sopopo.com:8001/rj/141010/360%E6%AF%8F%E6%97%A5%E7%9C%8B%E7%82%B9.apk' , 'zhijianxiaoshuo.apk' , '指尖小说' )" >下载</a></div>
+
+<div style="margin-left:0.1em;"><img src="images/wer_25.png" onClick="add('http://shouji.360tpcdn.com/150730/580642ffcae5fe8ca311c53bad35bcf2/com.taobao.trip_3001032.apk' , 'alilvyou.apk' , '阿里旅游' )"  /><p class="tj_fp">阿里旅游</p><p class="tj_lp">20万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150730/580642ffcae5fe8ca311c53bad35bcf2/com.taobao.trip_3001032.apk' , 'alilvyou.apk' , '阿里旅游' )">下载</a></div>
+
+<div><img src="images/wer_26.png" onClick="add('http://shouji.360tpcdn.com/150811/79eea37c555e796f55e73171d8a8088b/com.quanminbb.app.activity_7.apk' , 'quanmingbaobiao.apk' , '全民保镖' )" /><p class="tj_fp">全民保镖</p><p class="tj_lp">30万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150811/79eea37c555e796f55e73171d8a8088b/com.quanminbb.app.activity_7.apk' , 'quanmingbaobiao.apk' , '全民保镖' )">下载</a></div>
+
+<div  style="border-bottom:1px solid #e5e5e5;"><img src="images/wer_27.png" onClick="add('http://shouji.360tpcdn.com/150717/ad3ed49ce0b7fa47d6bcaf2c5df8de36/com.youloft.calendar_68.apk' , 'wannianli.apk' , '万年历' )" /><p class="tj_fp">万年历</p><p class="tj_lp">15万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150717/ad3ed49ce0b7fa47d6bcaf2c5df8de36/com.youloft.calendar_68.apk' , 'wannianli.apk' , '万年历' )">下载</a></div>
+
+<div style="border-right:0px; border-bottom:1px solid #e5e5e5;"><img src="images/wer_28.png" onClick="add('http://shouji.360tpcdn.com/150714/8e3d7ef8c9036c95336f291f0e481f7b/com.baidu.input_92.apk' , 'baidushurufa.apk' , '百度输入法' )" /><p class="tj_fp">百度输入法</p><p class="tj_lp">20万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150714/8e3d7ef8c9036c95336f291f0e481f7b/com.baidu.input_92.apk' , 'baidushurufa.apk' , '百度输入法' )">下载</a></div>
+
+<div style="margin-left:0.1em; border-bottom:1px solid #e5e5e5;"><img src="images/wer_35.png" onClick="add('http://shouji.360tpcdn.com/150804/5c836c65d68846f28df43838a3c4f71f/com.ifeng.news2_97.apk' , 'fenghuangnews.apk' , '凤凰新闻' )" /><p class="tj_fp">凤凰新闻</p><p class="tj_lp">20万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150804/5c836c65d68846f28df43838a3c4f71f/com.ifeng.news2_97.apk' , 'fenghuangnews.apk' , '凤凰新闻' )">下载</a></div>
+
+<div style="border-bottom:1px solid #e5e5e5;"><img src="images/wer_36.png" onClick="add('http://shouji.360tpcdn.com/150813/51fc90c4c49fe2898254bf5665a517ca/cn.kuwo.player_6940.apk' , 'kuwomusic.apk' , '酷我音乐' )" /><p class="tj_fp">酷我音乐</p><p class="tj_lp">30万+下载</p><a onClick="add('http://shouji.360tpcdn.com/150813/51fc90c4c49fe2898254bf5665a517ca/cn.kuwo.player_6940.apk' , 'kuwomusic.apk' , '酷我音乐' )" >下载</a></div>
+
+
+<div class="clear" style="border:0;"></div>
+</div>
+<!--浮动广告区-->
+<div class="ggao">
+<img src="images/guanggao.png"  class="guanggao"/>
+<img src="images/close.png" class="close" />
+</div>
+<script>
+$(".close").click(function(){ $(".ggao").css("display","none");})
+
+  function add( url , filename , apkname ) 
+    {
+        Android.add( url , filename , apkname );
+    }
+</script>
+</body>
+</html>
+

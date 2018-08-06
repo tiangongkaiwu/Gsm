@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/one.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/cn/hudun/wifi/ui/InitActivity.java" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/splash_activity.xml" />
+    </issue>
+</lint>

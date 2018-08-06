@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240.0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:background="@drawable/bg_dialog_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16.0dip" >
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="2.0dip"
+            android:text="设置月结算日"
+            android:textColor="#ff555555"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/ed_traffic"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_margin="8.0dip"
+            android:background="@drawable/bg_dialog_edit"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="30"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffc0c2c1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_day_confirm"
+            android:layout_width="120.0dip"
+            android:layout_height="50.0dip"
+            android:background="@drawable/bg_button_dialog_left"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#ff0064be"
+            android:textSize="16.0sp" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffc0c2c1" />
+
+        <Button
+            android:id="@+id/bt_day_cancle"
+            android:layout_width="120.0dip"
+            android:layout_height="50.0dip"
+            android:background="@drawable/bg_button_dialog_right"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ff0064be"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

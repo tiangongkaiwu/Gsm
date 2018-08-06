@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notify_wifi" >
+
+    <ImageView
+        android:id="@+id/iv_notify"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_centerVertical="true"
+        android:layout_margin="8.0dip"
+        android:contentDescription="@null"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_notify"
+        android:background="@drawable/ic_notify_wifi_line"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_line"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:id="@+id/tv_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@+id/tv_normal"
+            android:singleLine="true"
+            android:text="1111"
+            android:textColor="#fffb6f47"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_normal"
+            android:layout_marginTop="4.0dip"
+            android:background="@color/color_wifi_bg"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip" >
+
+            <TextView
+                android:id="@+id/tv_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="||||||||||||||||||||||||||||||"
+                android:textColor="@color/color_wifi_normal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_special_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_normal_size"
+                android:text="||||||||||"
+                android:textColor="@color/color_wifi_enhance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_end_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_special_size"
+                android:text="||||||||||"
+                android:textColor="@color/color_wifi_end"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

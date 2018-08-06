@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wifi"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:gravity="center"
+        android:text="流量监测"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/ic_wifi_top_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="24.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/bg_365flow_01"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:text="剩余流量充足，请放心使用"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="110.0dip"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/tv_info"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/bg_365flow_02" />
+
+        <TextView
+            android:id="@+id/tv_traffic_mode"
+            android:layout_width="110.0dip"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/tv_info"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:text="2G/3G流量"
+            android:textColor="#fffef116"
+            android:textSize="18.0sp" />
+
+        <View
+            android:id="@+id/ll_traffic_03_left"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_below="@id/tv_traffic_mode"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="120.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_365flow_02" />
+
+        <RelativeLayout
+            android:id="@+id/rl_traffic_03"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_below="@id/tv_traffic_mode"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="120.0dip"
+            android:layout_marginTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/tv_used_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5.0dip"
+                android:text="本月已用"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_used_month_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="6.0dip"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/rl_traffic_03"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="80.0dip"
+            android:layout_marginTop="9.0dip"
+            android:background="@drawable/bg_365flow_02" />
+
+        <LinearLayout
+            android:id="@+id/ll_traffic_04"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/rl_traffic_03"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12.0dip" >
+
+            <TextView
+                android:id="@+id/tv_used_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日已用"
+                android:textColor="#ffffffff"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_used_today_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="#ffffffff"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_biaopan"
+            android:layout_width="150.0dip"
+            android:layout_height="150.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_info"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/bg_flow_biaopan" >
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="105.0dip"
+                android:text="%"
+                android:textColor="#ff5ee8f2"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_point" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_traffic_05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_traffic_04"
+            android:layout_marginTop="10.0dip"
+            android:background="#2494c8ff"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <LinearLayout
+                android:id="@+id/ll_01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_remind_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月剩余"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_remind_month_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_remind_month_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="MB"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="56.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4.0dip"
+                android:background="#70ffffff" />
+
+            <LinearLayout
+                android:id="@+id/ll_02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="2.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_average_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日均可用"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_average_available_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_average_available_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="MB"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="56.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4.0dip"
+                android:background="#70ffffff" />
+
+            <LinearLayout
+                android:id="@+id/ll_03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_month_traffic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包月流量"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_month_traffic_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_month_traffic_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="MB"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="56.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4.0dip"
+                android:background="#70ffffff" />
+
+            <LinearLayout
+                android:id="@+id/ll_04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_until_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距结算日"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_until_end_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_until_end_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="天"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/ll_traffic_05"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_365flow_02" />
+
+        <RelativeLayout
+            android:id="@+id/rl_traffic_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/ll_traffic_05"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <ImageView
+                android:id="@+id/iv_monthflow_bill"
+                android:layout_width="18.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_monthflow_bill" />
+
+            <TextView
+                android:id="@+id/tv_monthflow_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/iv_monthflow_bill"
+                android:text="本月流量单"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_monthflow_bill_toright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_flow365_toright" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_below="@+id/rl_traffic_detail"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/bg_365flow_02" />
+
+        <RelativeLayout
+            android:id="@+id/rl_traffic_07"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_below="@id/rl_traffic_detail"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <ImageView
+                android:id="@+id/iv_traffic_rank"
+                android:layout_width="18.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_appflow_rank" />
+
+            <TextView
+                android:id="@+id/tv_traffic_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/iv_traffic_rank"
+                android:text="流量设置"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_traffic_rank_toright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_flow365_toright" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

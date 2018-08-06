@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#ffefeeea</color>
+    <color name="hardware_grey">#ff666666</color>
+    <color name="hardware_bule">#ff055383</color>
+    <color name="color_txt_flow365">#ff8f9396</color>
+    <color name="color_flow365_05">#ff909497</color>
+    <color name="color_flow365_06">#ffb0b3b8</color>
+    <color name="color_bg_bill">#b0000000</color>
+    <color name="color_flow_set_txt">#ff51a6f7</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_center_percent">#4d000000</color>
+    <color name="color_notification">#ff0f5b99</color>
+    <color name="color_notification_bg">#ff30312c</color>
+    <color name="color_wifi_normal">#ff49acff</color>
+    <color name="color_wifi_enhance">#ff00bb4f</color>
+    <color name="color_wifi_end">#ff444444</color>
+    <color name="color_wifi_bg">#ff292921</color>
+    <color name="blue">#0371CE</color>
+    <color name="gray">#B3B5B7</color>
+    <color name="gprs">#48A3DE</color>
+    <color name="game">#211B23</color>
+    <color name="traffic">#50b5f7</color>
+    <color name="wifienable">#98DB40</color>
+    <color name="wifidisable">#F15B58</color>
+    <color name="progress">#8BE5FF</color>
+    <color name="round">#3CA5D6</color>
+
+</resources>

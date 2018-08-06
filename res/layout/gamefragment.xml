@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_game_start"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/game_bg_start"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_game_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_game_fly"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/game_start"
+            android:gravity="center"
+            android:text="立即加速"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <WebView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_game_start" />
+
+        <RelativeLayout
+            android:id="@+id/rl_start_rocket"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_game_flying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/fly_list"
+                android:paddingBottom="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 点击开始加速后显示的页面 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_game_flyed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffdbd6cf"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_fly_rocket"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:background="@drawable/game_bg_fly"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_flying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/fly_lists" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fly_result"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:background="@drawable/game_app_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_fly_result"
+                android:layout_width="fill_parent"
+                android:layout_height="28.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="#33000000"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ff41f357"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_fly_middle_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/rl_fly_rocket"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/rl_fly_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/v_fly_middle_line"
+            android:layout_margin="4.0dip"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/rl_fly_info_4"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/game_bg_fly_info_0"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_fly_info_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="正在启动加速程序..."
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fly_percent_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fly_info_3"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/game_bg_fly_info_0"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_fly_info_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fly_percent_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fly_info_2"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/game_bg_fly_info_0"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_fly_info_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fly_percent_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fly_info_1"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/game_bg_fly_info_0"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_fly_info_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fly_percent_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fly_info_0"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/game_bg_fly_info_0"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_fly_info_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_fly_percent_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff555555"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

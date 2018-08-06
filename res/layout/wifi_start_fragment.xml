@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_hard_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#50b5f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:visibility="visible" >
+
+        <cn.joys.wifi.view.MyProgressBar
+            android:id="@+id/pb"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_pre"
+            android:layout_toRightOf="@+id/tv_pre"
+            android:text="%"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+        <!--
+       <cn.joys.wifi.view.WaterWaveView
+            android:id="@+id/waveview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/pb"
+            android:layout_alignParentTop="true" />
+        -->
+
+        <cn.joys.wifi.view.WaterWave
+            android:id="@+id/waveview1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/pb"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="60"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_plane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:background="@anim/fly" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="正在初始化应用程序..."
+                android:textColor="@color/traffic" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行过程中请勿使用手机，以免中断信号增强操作"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

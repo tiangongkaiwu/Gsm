@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_hard_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50b5f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_hard_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/hard_selector"
+            android:gravity="center"
+            android:text="硬件加速"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <WebView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hard_start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="通过硬件驱动程序加速手机的3G/4G信号接收模\n块，实现硬件性能提升"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hard_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50b5f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hard_end" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="已成功加速3G/4G模块，硬件性将能\n得到明显提升"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_hard_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/hard_selector"
+            android:gravity="center"
+            android:text="已加速"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hard_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50b5f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.18"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_1"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="获取3G/4G模块信息"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_hard_middle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text="1%"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_2"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="检查3G/4G驱动信息"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_hard_middle_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text="1%"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_3"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="加载3G/4G驱动"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_hard_middle_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text="1%"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_4"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="优化3G/4G设置"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_hard_middle_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text="1%"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_5"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="加速3G/4G模块"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_hard_middle_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28.0dip"
+                    android:gravity="right"
+                    android:text="1%"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hard_middle_6"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.0dip"
+                    android:text="完成..."
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="加速过程中请勿操作手机，以免造成加速\n中断，影响加速效果"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/hard_selector"
+                android:gravity="center"
+                android:text="正在激活..."
+                android:textColor="@android:color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
